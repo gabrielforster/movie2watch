@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Header} from './components/Header.js'
 import {WatchList} from './components/WatchList.js'
 import {Watchedmovies} from './components/Watchedmovies.js'
-import {Add} from './components/Add.js'
+import {Search} from './components/Search.js'
 import './App.css';
 import './lib/font-awesome/css/all.min.css'
 import {GlobalProvider} from './Context/GlobalState'
@@ -19,12 +19,12 @@ function App() {
             <WatchList/>  
           </Route>
           
-          <Route path="/watchedmovies">
+          <Route path="/assistidos">
             <Watchedmovies/>  
           </Route>
 
-          <Route path="/add">
-            <Add/>  
+          <Route path="/procurar">
+            <Search/>  
           </Route>
         </Switch>
 
