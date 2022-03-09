@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { MovieResultCard } from './MovieResultCard';
 
-export const Add = () => {
+export const Search = () => {
 
   const[search, setSearch] = useState("");
   const[movies, setMovies] = useState([])
@@ -9,7 +9,7 @@ export const Add = () => {
   const searchMovies=(evt) => {
     if(evt.key === "Enter")
     {
-      fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=pt-br&page=1&include_adult=false&query=${search}`)
+      fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_KEY}&language=pt-br&page=1&include_adult=false&query=${search}&max-results=40`)
       .then(res=> res.json())
       .then(data=>{
     if(!data.errors){
