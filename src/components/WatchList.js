@@ -9,18 +9,20 @@ export const WatchList = () => {
       <div className="container">
         <div className="header">
           <h1 className='heading'>Minha WatchList</h1>
+
+          <span className="count-movies">{watchlist.length} {WatchList.length === 1 ? 'Filme' : 'Filmes'}</span>
         </div>
 
         {watchlist.length > 0 ? (
-        <div className="movie-grid">
-        {watchlist.map((movie) =>(
-          <MovieCard movie={movie} type='watchlist'/>
-        ))}
-      </div>
-      )
-    :
-        <h2 className="no-movies">Nenhum filme na sua lista</h2>  
-    }
+            <div className="movie-grid">
+            {watchlist.map((movie) =>(
+              <MovieCard movie={movie} type='watchlist'/>
+            ))}
+            </div>
+          )
+        :
+            <h2 className="no-movies">Nenhum filme na sua lista, procure e adicione filmes</h2>  
+        }
         
       </div>
     </div>

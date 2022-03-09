@@ -13,15 +13,15 @@ export const Header = () => {
                  <ul className='nav-links'>
 
                     <li>
-                        <Link to="/watchedmovies">Filmes Assistidos</Link>
-                    </li>
-                    
-                    <li>
                         <Link to="/">Watch List</Link>
                     </li>
+
+                    <li>
+                        <Link to="/assistidos">Assistidos</Link>
+                    </li>
                     
                     <li>
-                        <Link to="/add" className='btn'>+ Adicione a WatchList</Link>
+                        <Link to="/procurar" className='btn'>Procure Filmes</Link>
                     </li>
                  </ul>
             </div>
