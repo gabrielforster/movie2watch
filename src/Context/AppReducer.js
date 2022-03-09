@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default (state, action) => {
     switch (action.type) {
       case "ADD_MOVIE_TO_WATCHLIST":
