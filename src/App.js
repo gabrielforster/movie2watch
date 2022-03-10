@@ -15,15 +15,15 @@ function App() {
         <Header/>
 
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/movie2watch/">
             <WatchList/>  
           </Route>
           
-          <Route path="/assistidos">
+          <Route path="/movie2watch/assistidos">
             <Watchedmovies/>  
           </Route>
 
-          <Route path="/procurar">
+          <Route path="/movie2watch/procurar">
             <Search/>  
           </Route>
         </Switch>
