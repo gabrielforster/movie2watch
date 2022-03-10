@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/movie2watch/static/css/main.649aa30f.css",
-    "main.js": "/movie2watch/static/js/main.bb794881.js",
+    "main.js": "/movie2watch/static/js/main.dd362315.js",
     "static/media/fa-solid-900.svg": "/movie2watch/static/media/fa-solid-900.18df003f90a7f1313b98.svg",
     "static/media/fa-brands-400.svg": "/movie2watch/static/media/fa-brands-400.3c45c98f6f6c1b009c08.svg",
     "static/media/fa-solid-900.eot": "/movie2watch/static/media/fa-solid-900.7eefe04dc985dd4ad38b.eot",
@@ -19,10 +19,10 @@
     "static/media/fa-regular-400.woff2": "/movie2watch/static/media/fa-regular-400.c52405129ae48097815d.woff2",
     "index.html": "/movie2watch/index.html",
     "main.649aa30f.css.map": "/movie2watch/static/css/main.649aa30f.css.map",
-    "main.bb794881.js.map": "/movie2watch/static/js/main.bb794881.js.map"
+    "main.dd362315.js.map": "/movie2watch/static/js/main.dd362315.js.map"
   },
   "entrypoints": [
     "static/css/main.649aa30f.css",
-    "static/js/main.bb794881.js"
+    "static/js/main.dd362315.js"
   ]
 }
