@@ -96,7 +96,7 @@ header .nav-links {
 
 header .nav-links li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 header .nav-links li:last-child {
@@ -269,6 +269,11 @@ header .nav-links li:last-child {
   color: #c4c4c4;
   font-size: 3rem;
   text-align: center;
+}
+
+.btn .githublogo {
+  height: 1rem;
+  width: 1rem;
 }
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-
+import logoGithub from './img/githubicon.svg'
 
 export const Header = () => {
   return (
@@ -22,6 +22,10 @@ export const Header = () => {
                     
                     <li>
                         <Link to="/movie2watch/procurar" className='btn'>Procure Filmes</Link>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/gabrielforster/movie2watch" target='_blank' rel="noreferrer" className='btn'><img className='githublogo' src={logoGithub} alt='github logo'></img></a>
                     </li>
                  </ul>
             </div>
