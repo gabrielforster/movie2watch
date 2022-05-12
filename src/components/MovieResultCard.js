@@ -1,8 +1,10 @@
 import React, { useContext, useState } from 'react'
 import {GlobalContext} from '../Context/GlobalState'
-import Modal from './MovieModal'
+import {MovieModal} from './MovieModal.tsx'
 
 export const MovieResultCard = ({movie}) => {
+
+    const [showModal, setShowModal] = useState(false)
 
     const { addMovieToWatchlist, addMovieToWatched, watchlist, watched } = useContext(GlobalContext)
 
@@ -11,8 +13,6 @@ export const MovieResultCard = ({movie}) => {
 
     const disableWatchList = storedMovies ? true : storedMovieWatched ? true : false
     const disableWatched = storedMovieWatched ? true : false
-
-    const { showModal, setShowModal } = useState(false)
 
   return (
         <div className="movie-card">
@@ -24,14 +24,18 @@ export const MovieResultCard = ({movie}) => {
                     <div className="empty-poster"></div>
                 )}
             </div>
-
             <div className="info">
                 <div className="header">
                     <h3 className='title'>{movie.title}</h3>    
                     <h4 className='date'>
                         {movie.release_date ? movie.release_date.substring(0,4) : '-'}
                     </h4>
-                    <h5 className='description'>Descrição</h5>
+                    <h4 
+                        className='description'
+                        onClick={() => setShowModal(true) }
+                    >
+                        Descrição
+                    </h4> 
                 </div>
                 <div className="controls">
                         <button 
@@ -48,7 +52,8 @@ export const MovieResultCard = ({movie}) => {
                         onClick={()=> addMovieToWatched(movie)}
                     >
                         Adicionar a Assistidos
-                    </button> 
+                    </button>
+                    <MovieModal show={showModal} movie={movie} onClose={()=>{ setShowModal(false) }} />
                 </div>
             </div>    
         </div>

@@ -4,7 +4,7 @@ import {Header} from './components/Header.js'
 import {WatchList} from './components/WatchList.js'
 import {Watchedmovies} from './components/Watchedmovies.js'
 import {Search} from './components/Search.js'
-import './App.css';
+import './App.scss';
 import './lib/font-awesome/css/all.min.css'
 import {GlobalProvider} from './Context/GlobalState'
 
