@@ -1,5 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import {GlobalContext} from '../Context/GlobalState'
+import Modal from './MovieModal'
 
 export const MovieResultCard = ({movie}) => {
 
@@ -10,6 +11,8 @@ export const MovieResultCard = ({movie}) => {
 
     const disableWatchList = storedMovies ? true : storedMovieWatched ? true : false
     const disableWatched = storedMovieWatched ? true : false
+
+    const { showModal, setShowModal } = useState(false)
 
   return (
         <div className="movie-card">
@@ -28,6 +31,7 @@ export const MovieResultCard = ({movie}) => {
                     <h4 className='date'>
                         {movie.release_date ? movie.release_date.substring(0,4) : '-'}
                     </h4>
+                    <h5 className='description'>Descrição</h5>
                 </div>
                 <div className="controls">
                         <button 

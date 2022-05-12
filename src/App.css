@@ -167,6 +167,16 @@ header .nav-links li:last-child {
   margin: 0;
 }
 
+.movie-card .info .description{
+  width: 5rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-decoration: underline;
+  color: var(--gray);
+  margin: 0;
+}
+
 .movie-card .controls button {
   margin-right: 10px;
 }
